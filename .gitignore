@@ -37,3 +37,4 @@ Thumbs.db
 /ignore
 /personal
 *.vpp.bak*
+*.vpp.lck*
