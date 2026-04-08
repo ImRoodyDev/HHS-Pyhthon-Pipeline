@@ -36,8 +36,6 @@ CREATE TABLE Accessoire (
 	accessoirenr INT,
 	naam VARCHAR(45),
 	soort VARCHAR(45),
-	standaardprijs FLOAT,
-	inkoopprijs FLOAT,
 	prijsklasse VARCHAR(20),
 
 	PRIMARY KEY(accessoirenr)
@@ -58,8 +56,6 @@ CREATE TABLE Fiets (
 	merk VARCHAR(45),
 	type VARCHAR(45),
 	kleur VARCHAR(20),
-	standaardprijs FLOAT,
-	inkoopprijs FLOAT,
 	prijsklasse VARCHAR(20),
 
 	PRIMARY KEY(fietsnr)
@@ -84,7 +80,6 @@ CREATE TABLE Monteur (
 	monteurnr INT NOT NULL,
 	naam VARCHAR(45),
 	woonplaats VARCHAR(45),
-	uurloon FLOAT,
 	loonklasse VARCHAR(20),
 	begintijd DATE NOT NULL,
 	eindtijd DATE
@@ -100,7 +95,9 @@ CREATE TABLE Accessoire_Verkoop (
 	accessoirenr INT NOT NULL,
 	leveranciernr INT NOT NULL,
 	aantal INT NOT NULL,
+	standaardprijs FLOAT NOT NULL,
 	verkoopprijs FLOAT NOT NULL,
+	inkoopprijs FLOAT NOT NULL,
 	omzet FLOAT NOT NULL,
 	inkoopwaarde FLOAT NOT NULL,
 	brutowinst FLOAT NOT NULL,
@@ -123,7 +120,9 @@ CREATE TABLE Fiets_Verkoop (
 	fietsnr INT NOT NULL,
 	fabrikantnr INT NOT NULL,
 	aantal INT NOT NULL,
+	standaardprijs FLOAT NOT NULL,
 	verkoopprijs FLOAT NOT NULL,
+	inkoopprijs FLOAT NOT NULL,
 	omzet FLOAT NOT NULL,
 	inkoopwaarde FLOAT NOT NULL,
 	brutowinst FLOAT NOT NULL,
@@ -147,6 +146,7 @@ CREATE TABLE Onderhoud (
 	starttijd TEXT,
 	eindtijd TEXT,
 	duur_minuten INT,
+	uurloon FLOAT,
 	arbeidskosten FLOAT,
 
 	PRIMARY KEY(onderhoudnr),
