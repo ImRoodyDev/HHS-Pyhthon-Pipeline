@@ -36,3 +36,7 @@ Thumbs.db
 .test
 /ignore
 /personal
+*.vpp.bak*
+*.vpp.lck*
+*.tmp
+DE/WEEK 5/~$drachtbeschrijving.docx
