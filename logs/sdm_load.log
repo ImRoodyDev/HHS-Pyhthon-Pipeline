@@ -1,0 +1,19 @@
+2026-04-15 10:31:24 | INFO | Imports gedaan — SDM: BikeToDrive_6 _SourceDataModel.db
+2026-04-15 10:31:24 | INFO | TABLE_MAPPING gedefinieerd — 23 tabellen geconfigureerd
+2026-04-15 10:31:25 | INFO | Generieke functies gedefinieerd (reset_sdm, load_db_to_sdm)
+2026-04-15 10:31:25 | INFO | ==================================================
+2026-04-15 10:31:25 | INFO | START FULL REFRESH VAN SOURCE DATA MODEL
+2026-04-15 10:31:25 | INFO | ==================================================
+2026-04-15 10:31:25 | INFO | STAP 1: Reset — alle SDM tabellen leegmaken
+2026-04-15 10:31:25 | INFO | STAP 2: Data laden van operationele databases
+2026-04-15 10:31:25 | INFO | --- Laden uit: BikeToDrive_1_Accessoireverkoop.db ---
+2026-04-15 10:31:25 | INFO | --- Laden uit: BikeToDrive_2_Fietsverkoop.db ---
+2026-04-15 10:31:25 | INFO | --- Laden uit: BikeToDrive_3_Onderhoud.db ---
+2026-04-15 10:31:25 | INFO | --- Laden uit: BikeToDrive_4_Accessoire_Inkoop.db ---
+2026-04-15 10:31:25 | INFO | --- Laden uit: BikeToDrive_5_Fiets_Inkoop.db ---
+2026-04-15 10:31:25 | INFO | ==================================================
+2026-04-15 10:31:25 | INFO | FULL REFRESH SUCCESVOL AFGEROND
+2026-04-15 10:31:25 | INFO | ==================================================
+2026-04-15 10:31:25 | INFO | START RESET SDM
+2026-04-15 10:31:25 | INFO | RESET VOLTOOID — SDM IS LEEG
+2026-04-15 10:31:25 | INFO | Verificatie gestart...

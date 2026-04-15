@@ -1,0 +1,17 @@
+2026-04-15 10:31:44 | INFO | Imports gedaan — SDM: ../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH: BikeToDrive_6_Datawarehouse.db
+2026-04-15 10:31:44 | INFO | DWH-strategie gedetecteerd: SCD1
+2026-04-15 10:31:44 | INFO | Config: 8 SCD1, 0 SCD2, 3 feiten
+2026-04-15 10:31:44 | INFO | Generieke functies gedefinieerd
+2026-04-15 10:31:44 | INFO | ==================================================
+2026-04-15 10:31:44 | INFO | ==================================================
+2026-04-15 10:31:44 | INFO | STAP 1: Dimensies SCD Type 1
+2026-04-15 10:31:44 | INFO | STAP 2: Overgeslagen — huidige DWH gebruikt geen SCD Type 2 schema
+2026-04-15 10:31:44 | INFO | STAP 3: Feittabellen
+2026-04-15 10:31:44 | INFO | ==================================================
+2026-04-15 10:31:44 | INFO | ETL SUCCESVOL AFGEROND
+2026-04-15 10:31:44 | INFO | ==================================================
+2026-04-15 10:31:44 | INFO | START RESET DWH
+2026-04-15 10:31:44 | INFO | RESET VOLTOOID — DWH IS LEEG
+2026-04-15 10:31:44 | INFO | Verificatie gestart...
+2026-04-15 10:31:44 | INFO | Preview 'Klant' — 0 rijen
+2026-04-15 10:31:44 | INFO | Opgeruimd
