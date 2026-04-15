@@ -1,0 +1,153 @@
+2026-04-15 12:58:24.153 | INFO     | __main__:<module>:32 - Imports gedaan — SDM: BikeToDrive_6 _SourceDataModel.db
+2026-04-15 12:58:32.145 | INFO     | __main__:<module>:32 - Imports gedaan — SDM: BikeToDrive_6 _SourceDataModel.db
+2026-04-15 12:58:40.449 | INFO     | __main__:<module>:32 - Imports gedaan — SDM: BikeToDrive_6 _SourceDataModel.db
+2026-04-15 12:58:40.459 | INFO     | __main__:<module>:40 - TABLE_MAPPING gedefinieerd — 23 tabellen geconfigureerd
+2026-04-15 12:58:40.468 | INFO     | __main__:<module>:31 - Generieke functies gedefinieerd (reset_sdm, load_db_to_sdm)
+2026-04-15 12:58:40.477 | INFO     | __main__:<module>:3 - ==================================================
+2026-04-15 12:58:40.478 | INFO     | __main__:<module>:4 - START FULL REFRESH VAN SOURCE DATA MODEL
+2026-04-15 12:58:40.478 | INFO     | __main__:<module>:5 - ==================================================
+2026-04-15 12:58:40.479 | INFO     | __main__:<module>:9 - STAP 1: Reset — alle SDM tabellen leegmaken
+2026-04-15 12:58:40.481 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop
+2026-04-15 12:58:40.483 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop_Fiets
+2026-04-15 12:58:40.484 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop_Fabrikant
+2026-04-15 12:58:40.484 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop
+2026-04-15 12:58:40.485 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop_Accessoire
+2026-04-15 12:58:40.486 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop_Leverancier
+2026-04-15 12:58:40.487 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud
+2026-04-15 12:58:40.488 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Monteur
+2026-04-15 12:58:40.489 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Filiaal
+2026-04-15 12:58:40.490 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Fiets
+2026-04-15 12:58:40.490 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Fabrikant
+2026-04-15 12:58:40.490 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop
+2026-04-15 12:58:40.491 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Klant
+2026-04-15 12:58:40.491 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Monteur
+2026-04-15 12:58:40.492 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Filiaal
+2026-04-15 12:58:40.493 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Fiets
+2026-04-15 12:58:40.493 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Fabrikant
+2026-04-15 12:58:40.494 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop
+2026-04-15 12:58:40.494 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Klant
+2026-04-15 12:58:40.495 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Monteur
+2026-04-15 12:58:40.495 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Filiaal
+2026-04-15 12:58:40.495 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Accessoire
+2026-04-15 12:58:40.496 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Leverancier
+2026-04-15 12:58:40.497 | INFO     | __main__:<module>:12 - STAP 2: Data laden van operationele databases
+2026-04-15 12:58:40.498 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_1_Accessoireverkoop.db ---
+2026-04-15 12:58:40.504 | INFO     | __main__:load_db_to_sdm:25 - ✓ Leverancier → Accessoire_Verkoop_Leverancier (5 rijen)
+2026-04-15 12:58:40.507 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire → Accessoire_Verkoop_Accessoire (10 rijen)
+2026-04-15 12:58:40.510 | INFO     | __main__:load_db_to_sdm:25 - ✓ Filiaal → Accessoire_Verkoop_Filiaal (4 rijen)
+2026-04-15 12:58:40.513 | INFO     | __main__:load_db_to_sdm:25 - ✓ Monteur → Accessoire_Verkoop_Monteur (10 rijen)
+2026-04-15 12:58:40.515 | INFO     | __main__:load_db_to_sdm:25 - ✓ Klant → Accessoire_Verkoop_Klant (20 rijen)
+2026-04-15 12:58:40.518 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire_Verkoop → Accessoire_Verkoop (100 rijen)
+2026-04-15 12:58:40.519 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_2_Fietsverkoop.db ---
+2026-04-15 12:58:40.522 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fabrikant → Fiets_Verkoop_Fabrikant (10 rijen)
+2026-04-15 12:58:40.525 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets → Fiets_Verkoop_Fiets (75 rijen)
+2026-04-15 12:58:40.528 | INFO     | __main__:load_db_to_sdm:25 - ✓ Filiaal → Fiets_Verkoop_Filiaal (4 rijen)
+2026-04-15 12:58:40.531 | INFO     | __main__:load_db_to_sdm:25 - ✓ Monteur → Fiets_Verkoop_Monteur (10 rijen)
+2026-04-15 12:58:40.534 | INFO     | __main__:load_db_to_sdm:25 - ✓ Klant → Fiets_Verkoop_Klant (25 rijen)
+2026-04-15 12:58:40.538 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets_Verkoop → Fiets_Verkoop (150 rijen)
+2026-04-15 12:58:40.539 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_3_Onderhoud.db ---
+2026-04-15 12:58:40.542 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fabrikant → Onderhoud_Fabrikant (11 rijen)
+2026-04-15 12:58:40.546 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets → Onderhoud_Fiets (30 rijen)
+2026-04-15 12:58:40.549 | INFO     | __main__:load_db_to_sdm:25 - ✓ Filiaal → Onderhoud_Filiaal (5 rijen)
+2026-04-15 12:58:40.552 | INFO     | __main__:load_db_to_sdm:25 - ✓ Monteur → Onderhoud_Monteur (15 rijen)
+2026-04-15 12:58:40.556 | INFO     | __main__:load_db_to_sdm:25 - ✓ Onderhoud → Onderhoud (50 rijen)
+2026-04-15 12:58:40.556 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_4_Accessoire_Inkoop.db ---
+2026-04-15 12:58:40.559 | INFO     | __main__:load_db_to_sdm:25 - ✓ Leverancier → Accessoire_Inkoop_Leverancier (5 rijen)
+2026-04-15 12:58:40.562 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire → Accessoire_Inkoop_Accessoire (13 rijen)
+2026-04-15 12:58:40.565 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire_Inkoop → Accessoire_Inkoop (50 rijen)
+2026-04-15 12:58:40.566 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_5_Fiets_Inkoop.db ---
+2026-04-15 12:58:40.569 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fabrikant → Fiets_Inkoop_Fabrikant (11 rijen)
+2026-04-15 12:58:40.572 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets → Fiets_Inkoop_Fiets (75 rijen)
+2026-04-15 12:58:40.576 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets_Inkoop → Fiets_Inkoop (100 rijen)
+2026-04-15 12:58:40.576 | INFO     | __main__:<module>:15 - ==================================================
+2026-04-15 12:58:40.577 | INFO     | __main__:<module>:16 - FULL REFRESH SUCCESVOL AFGEROND
+2026-04-15 12:58:40.577 | INFO     | __main__:<module>:17 - ==================================================
+2026-04-15 12:58:40.583 | INFO     | __main__:<module>:3 - START RESET SDM
+2026-04-15 12:58:40.585 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop
+2026-04-15 12:58:40.586 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop_Fiets
+2026-04-15 12:58:40.587 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop_Fabrikant
+2026-04-15 12:58:40.587 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop
+2026-04-15 12:58:40.588 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop_Accessoire
+2026-04-15 12:58:40.588 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop_Leverancier
+2026-04-15 12:58:40.589 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud
+2026-04-15 12:58:40.589 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Monteur
+2026-04-15 12:58:40.590 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Filiaal
+2026-04-15 12:58:40.590 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Fiets
+2026-04-15 12:58:40.591 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Fabrikant
+2026-04-15 12:58:40.591 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop
+2026-04-15 12:58:40.592 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Klant
+2026-04-15 12:58:40.592 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Monteur
+2026-04-15 12:58:40.593 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Filiaal
+2026-04-15 12:58:40.593 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Fiets
+2026-04-15 12:58:40.594 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Fabrikant
+2026-04-15 12:58:40.594 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop
+2026-04-15 12:58:40.595 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Klant
+2026-04-15 12:58:40.595 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Monteur
+2026-04-15 12:58:40.596 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Filiaal
+2026-04-15 12:58:40.596 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Accessoire
+2026-04-15 12:58:40.596 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Leverancier
+2026-04-15 12:58:40.598 | INFO     | __main__:<module>:8 - RESET VOLTOOID — SDM IS LEEG
+2026-04-15 12:58:40.605 | INFO     | __main__:<module>:3 - Verificatie gestart...
+2026-04-15 12:58:40.677 | INFO     | __main__:<module>:19 - Verificatie afgerond — 23 tabellen gecontroleerd
+2026-04-15 12:58:40.686 | INFO     | __main__:<module>:9 - Preview 'Fiets_Inkoop' — 0 rijen getoond
+2026-04-15 12:59:06.604 | INFO     | __main__:<module>:3 - ==================================================
+2026-04-15 12:59:06.605 | INFO     | __main__:<module>:4 - START FULL REFRESH VAN SOURCE DATA MODEL
+2026-04-15 12:59:06.605 | INFO     | __main__:<module>:5 - ==================================================
+2026-04-15 12:59:06.606 | INFO     | __main__:<module>:9 - STAP 1: Reset — alle SDM tabellen leegmaken
+2026-04-15 12:59:06.607 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop
+2026-04-15 12:59:06.607 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop_Fiets
+2026-04-15 12:59:06.608 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Inkoop_Fabrikant
+2026-04-15 12:59:06.609 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop
+2026-04-15 12:59:06.609 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop_Accessoire
+2026-04-15 12:59:06.610 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Inkoop_Leverancier
+2026-04-15 12:59:06.610 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud
+2026-04-15 12:59:06.611 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Monteur
+2026-04-15 12:59:06.611 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Filiaal
+2026-04-15 12:59:06.612 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Fiets
+2026-04-15 12:59:06.613 | INFO     | __main__:reset_sdm:8 - ✓ reset: Onderhoud_Fabrikant
+2026-04-15 12:59:06.613 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop
+2026-04-15 12:59:06.614 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Klant
+2026-04-15 12:59:06.614 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Monteur
+2026-04-15 12:59:06.615 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Filiaal
+2026-04-15 12:59:06.615 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Fiets
+2026-04-15 12:59:06.616 | INFO     | __main__:reset_sdm:8 - ✓ reset: Fiets_Verkoop_Fabrikant
+2026-04-15 12:59:06.617 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop
+2026-04-15 12:59:06.617 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Klant
+2026-04-15 12:59:06.618 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Monteur
+2026-04-15 12:59:06.618 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Filiaal
+2026-04-15 12:59:06.618 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Accessoire
+2026-04-15 12:59:06.619 | INFO     | __main__:reset_sdm:8 - ✓ reset: Accessoire_Verkoop_Leverancier
+2026-04-15 12:59:06.621 | INFO     | __main__:<module>:12 - STAP 2: Data laden van operationele databases
+2026-04-15 12:59:06.622 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_1_Accessoireverkoop.db ---
+2026-04-15 12:59:06.626 | INFO     | __main__:load_db_to_sdm:25 - ✓ Leverancier → Accessoire_Verkoop_Leverancier (5 rijen)
+2026-04-15 12:59:06.631 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire → Accessoire_Verkoop_Accessoire (10 rijen)
+2026-04-15 12:59:06.635 | INFO     | __main__:load_db_to_sdm:25 - ✓ Filiaal → Accessoire_Verkoop_Filiaal (4 rijen)
+2026-04-15 12:59:06.639 | INFO     | __main__:load_db_to_sdm:25 - ✓ Monteur → Accessoire_Verkoop_Monteur (10 rijen)
+2026-04-15 12:59:06.642 | INFO     | __main__:load_db_to_sdm:25 - ✓ Klant → Accessoire_Verkoop_Klant (20 rijen)
+2026-04-15 12:59:06.646 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire_Verkoop → Accessoire_Verkoop (100 rijen)
+2026-04-15 12:59:06.646 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_2_Fietsverkoop.db ---
+2026-04-15 12:59:06.651 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fabrikant → Fiets_Verkoop_Fabrikant (10 rijen)
+2026-04-15 12:59:06.655 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets → Fiets_Verkoop_Fiets (75 rijen)
+2026-04-15 12:59:06.658 | INFO     | __main__:load_db_to_sdm:25 - ✓ Filiaal → Fiets_Verkoop_Filiaal (4 rijen)
+2026-04-15 12:59:06.662 | INFO     | __main__:load_db_to_sdm:25 - ✓ Monteur → Fiets_Verkoop_Monteur (10 rijen)
+2026-04-15 12:59:06.666 | INFO     | __main__:load_db_to_sdm:25 - ✓ Klant → Fiets_Verkoop_Klant (25 rijen)
+2026-04-15 12:59:06.669 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets_Verkoop → Fiets_Verkoop (150 rijen)
+2026-04-15 12:59:06.670 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_3_Onderhoud.db ---
+2026-04-15 12:59:06.673 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fabrikant → Onderhoud_Fabrikant (11 rijen)
+2026-04-15 12:59:06.676 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets → Onderhoud_Fiets (30 rijen)
+2026-04-15 12:59:06.679 | INFO     | __main__:load_db_to_sdm:25 - ✓ Filiaal → Onderhoud_Filiaal (5 rijen)
+2026-04-15 12:59:06.683 | INFO     | __main__:load_db_to_sdm:25 - ✓ Monteur → Onderhoud_Monteur (15 rijen)
+2026-04-15 12:59:06.686 | INFO     | __main__:load_db_to_sdm:25 - ✓ Onderhoud → Onderhoud (50 rijen)
+2026-04-15 12:59:06.687 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_4_Accessoire_Inkoop.db ---
+2026-04-15 12:59:06.690 | INFO     | __main__:load_db_to_sdm:25 - ✓ Leverancier → Accessoire_Inkoop_Leverancier (5 rijen)
+2026-04-15 12:59:06.694 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire → Accessoire_Inkoop_Accessoire (13 rijen)
+2026-04-15 12:59:06.698 | INFO     | __main__:load_db_to_sdm:25 - ✓ Accessoire_Inkoop → Accessoire_Inkoop (50 rijen)
+2026-04-15 12:59:06.698 | INFO     | __main__:load_db_to_sdm:19 - --- Laden uit: BikeToDrive_5_Fiets_Inkoop.db ---
+2026-04-15 12:59:06.702 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fabrikant → Fiets_Inkoop_Fabrikant (11 rijen)
+2026-04-15 12:59:06.706 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets → Fiets_Inkoop_Fiets (75 rijen)
+2026-04-15 12:59:06.710 | INFO     | __main__:load_db_to_sdm:25 - ✓ Fiets_Inkoop → Fiets_Inkoop (100 rijen)
+2026-04-15 12:59:06.710 | INFO     | __main__:<module>:15 - ==================================================
+2026-04-15 12:59:06.711 | INFO     | __main__:<module>:16 - FULL REFRESH SUCCESVOL AFGEROND
+2026-04-15 12:59:06.711 | INFO     | __main__:<module>:17 - ==================================================
+2026-04-15 12:59:13.318 | INFO     | __main__:<module>:3 - Verificatie gestart...
+2026-04-15 12:59:13.327 | INFO     | __main__:<module>:19 - Verificatie afgerond — 23 tabellen gecontroleerd
