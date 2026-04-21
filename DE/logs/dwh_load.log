@@ -106,3 +106,93 @@
 2026-04-20 23:26:55.837 | INFO     | __main__:<module>:131 - ✓ SDM en DWH hersteld naar origineel
 2026-04-20 23:26:55.838 | INFO     | __main__:<module>:132 - === TEST 6 GESLAAGD ===
 2026-04-21 01:55:33.222 | INFO     | __main__:<module>:2 - Verificatie gestart...
+Imports gedaan — SDM: ../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH: BikeToDrive_6_Datawarehouse.db
+DWH-strategie gedetecteerd: SCD2
+Config: 6 SCD1, 2 SCD2, 3 feiten
+Generieke functies gedefinieerd
+==================================================
+START ETL: SDM → DWH
+==================================================
+STAP 1: Dimensies SCD Type 1
+  ✓ Datum: 0 nieuw, 0 gewijzigd
+  ✓ Filiaal: 0 nieuw, 0 gewijzigd
+  ✓ Leverancier: 0 nieuw, 0 gewijzigd
+  ✓ Accessoire: 0 nieuw, 0 gewijzigd
+  ✓ Fabrikant: 0 nieuw, 0 gewijzigd
+  ✓ Fiets: 0 nieuw, 0 gewijzigd
+STAP 2: Dimensies SCD Type 2
+  ✓ Klant: 0 nieuw, 0 gewijzigd (SCD2)
+  ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
+STAP 3: Feittabellen
+  ✓ Accessoire_Verkoop: 0 nieuwe rijen
+  ✓ Fiets_Verkoop: 0 nieuwe rijen
+  ✓ Onderhoud: 0 nieuwe rijen
+==================================================
+ETL SUCCESVOL AFGEROND
+==================================================
+START RESET DWH
+  ✓ reset: Onderhoud
+  ✓ reset: Fiets_Verkoop
+  ✓ reset: Accessoire_Verkoop
+  ✓ reset: Monteur
+  ✓ reset: Klant
+  ✓ reset: Fiets
+  ✓ reset: Fabrikant
+  ✓ reset: Accessoire
+  ✓ reset: Leverancier
+  ✓ reset: Filiaal
+  ✓ reset: Datum
+RESET VOLTOOID — DWH IS LEEG
+Verificatie gestart...
+Preview 'Klant' — 0 rijen
+  ✓ Filiaal: 6 nieuw, 0 gewijzigd
+Opgeruimd
+  ✓ Filiaal: 0 nieuw, 0 gewijzigd
+  ✓ Filiaal: 0 nieuw, 0 gewijzigd
+Hersteld naar origineel
+Klant 1 niet aanwezig in DWH — initialiseer eerst de klantdimensie voor deze test
+  ✓ Klant: 25 nieuw, 0 gewijzigd (SCD2)
+  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+SCD2 gedetecteerd — oude versie afgesloten en nieuwe versie toegevoegd
+Brondata is aangepast voor de vervolgtest met een nieuw feit
+  ✓ Filiaal: 1 nieuw, 0 gewijzigd
+DWH is leeg — laad eerst de benodigde dimensies voor deze test
+  ✓ Datum: 196 nieuw, 0 gewijzigd
+  ✓ Filiaal: 0 nieuw, 0 gewijzigd
+  ✓ Leverancier: 5 nieuw, 0 gewijzigd
+  ✓ Accessoire: 13 nieuw, 0 gewijzigd
+  ✓ Fabrikant: 11 nieuw, 0 gewijzigd
+  ✓ Fiets: 75 nieuw, 0 gewijzigd
+  ✓ Klant: 0 nieuw, 0 gewijzigd (SCD2)
+  ✓ Monteur: 15 nieuw, 0 gewijzigd (SCD2)
+  ✓ Accessoire_Verkoop: 101 nieuwe rijen
+  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+Opgeruimd + klant hersteld via SCD2
+SDM brondata gewijzigd
+Herlaad: volledige ETL starten...
+  ✓ Datum: 0 nieuw, 0 gewijzigd
+  ✓ Filiaal: 0 nieuw, 0 gewijzigd
+  ✓ Leverancier: 0 nieuw, 0 gewijzigd
+  ✓ Accessoire: 0 nieuw, 0 gewijzigd
+  ✓ Fabrikant: 0 nieuw, 0 gewijzigd
+  ✓ Fiets: 0 nieuw, 0 gewijzigd
+  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+  ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
+  ✓ Accessoire_Verkoop: 0 nieuwe rijen
+  ✓ Fiets_Verkoop: 150 nieuwe rijen
+  ✓ Onderhoud: 50 nieuwe rijen
+✓ SCD1 Leverancier correct overschreven
+✓ SCD2 Klant correct — 3 afgesloten, 1 actueel
+  Fiets_Verkoop was leeg, initieel gevuld met 150 rijen
+  Onderhoud was leeg, initieel gevuld met 50 rijen
+✓ Geen feit-duplicaten na herlaad
+  ✓ Datum: 0 nieuw, 0 gewijzigd
+  ✓ Filiaal: 0 nieuw, 0 gewijzigd
+  ✓ Leverancier: 0 nieuw, 0 gewijzigd
+  ✓ Accessoire: 0 nieuw, 0 gewijzigd
+  ✓ Fabrikant: 0 nieuw, 0 gewijzigd
+  ✓ Fiets: 0 nieuw, 0 gewijzigd
+  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+  ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
+✓ SDM en DWH hersteld naar origineel
+=== TEST 6 GESLAAGD ===
