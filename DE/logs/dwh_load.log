@@ -15,3 +15,94 @@
 2026-04-15 10:31:44 | INFO | Verificatie gestart...
 2026-04-15 10:31:44 | INFO | Preview 'Klant' � 0 rijen
 2026-04-15 10:31:44 | INFO | Opgeruimd
+2026-04-20 23:26:54.983 | INFO     | __main__:<module>:27 - Imports gedaan — SDM: ../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH: BikeToDrive_6_Datawarehouse.db
+2026-04-20 23:26:55.004 | INFO     | __main__:<module>:114 - DWH-strategie gedetecteerd: SCD2
+2026-04-20 23:26:55.006 | INFO     | __main__:<module>:115 - Config: 6 SCD1, 2 SCD2, 3 feiten
+2026-04-20 23:26:55.036 | INFO     | __main__:<module>:131 - Generieke functies gedefinieerd
+2026-04-20 23:26:55.052 | INFO     | __main__:<module>:3 - ==================================================
+2026-04-20 23:26:55.053 | INFO     | __main__:<module>:4 - START ETL: SDM → DWH
+2026-04-20 23:26:55.054 | INFO     | __main__:<module>:5 - ==================================================
+2026-04-20 23:26:55.061 | INFO     | __main__:<module>:11 - STAP 1: Dimensies SCD Type 1
+2026-04-20 23:26:55.090 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.102 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 1 gewijzigd
+2026-04-20 23:26:55.119 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 0 nieuw, 1 gewijzigd
+2026-04-20 23:26:55.136 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.155 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.164 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.165 | INFO     | __main__:<module>:18 - STAP 2: Dimensies SCD Type 2
+2026-04-20 23:26:55.181 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+2026-04-20 23:26:55.197 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 0 nieuw, 1 gewijzigd (SCD2)
+2026-04-20 23:26:55.199 | INFO     | __main__:<module>:26 - STAP 3: Feittabellen
+2026-04-20 23:26:55.210 | INFO     | __main__:load_feit:128 -   ✓ Accessoire_Verkoop: 0 nieuwe rijen
+2026-04-20 23:26:55.220 | INFO     | __main__:load_feit:128 -   ✓ Fiets_Verkoop: 0 nieuwe rijen
+2026-04-20 23:26:55.231 | INFO     | __main__:load_feit:128 -   ✓ Onderhoud: 0 nieuwe rijen
+2026-04-20 23:26:55.232 | INFO     | __main__:<module>:44 - ==================================================
+2026-04-20 23:26:55.233 | INFO     | __main__:<module>:45 - ETL SUCCESVOL AFGEROND
+2026-04-20 23:26:55.233 | INFO     | __main__:<module>:46 - ==================================================
+2026-04-20 23:26:55.247 | INFO     | __main__:<module>:3 - START RESET DWH
+2026-04-20 23:26:55.254 | INFO     | __main__:<module>:10 -   ✓ reset: Onderhoud
+2026-04-20 23:26:55.255 | INFO     | __main__:<module>:10 -   ✓ reset: Fiets_Verkoop
+2026-04-20 23:26:55.257 | INFO     | __main__:<module>:10 -   ✓ reset: Accessoire_Verkoop
+2026-04-20 23:26:55.258 | INFO     | __main__:<module>:10 -   ✓ reset: Monteur
+2026-04-20 23:26:55.259 | INFO     | __main__:<module>:10 -   ✓ reset: Klant
+2026-04-20 23:26:55.260 | INFO     | __main__:<module>:10 -   ✓ reset: Fiets
+2026-04-20 23:26:55.261 | INFO     | __main__:<module>:10 -   ✓ reset: Fabrikant
+2026-04-20 23:26:55.262 | INFO     | __main__:<module>:10 -   ✓ reset: Accessoire
+2026-04-20 23:26:55.264 | INFO     | __main__:<module>:10 -   ✓ reset: Leverancier
+2026-04-20 23:26:55.265 | INFO     | __main__:<module>:10 -   ✓ reset: Filiaal
+2026-04-20 23:26:55.266 | INFO     | __main__:<module>:10 -   ✓ reset: Datum
+2026-04-20 23:26:55.269 | INFO     | __main__:<module>:14 - RESET VOLTOOID — DWH IS LEEG
+2026-04-20 23:26:55.282 | INFO     | __main__:<module>:2 - Verificatie gestart...
+2026-04-20 23:26:55.311 | INFO     | __main__:<module>:7 - Preview 'Klant' — 0 rijen
+2026-04-20 23:26:55.340 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 6 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.347 | INFO     | __main__:<module>:22 - Opgeruimd
+2026-04-20 23:26:55.370 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.379 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.380 | INFO     | __main__:<module>:23 - Hersteld naar origineel
+2026-04-20 23:26:55.396 | INFO     | __main__:<module>:17 - Klant 1 niet aanwezig in DWH — initialiseer eerst de klantdimensie voor deze test
+2026-04-20 23:26:55.402 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 25 nieuw, 0 gewijzigd (SCD2)
+2026-04-20 23:26:55.421 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+2026-04-20 23:26:55.425 | INFO     | __main__:<module>:46 - SCD2 gedetecteerd — oude versie afgesloten en nieuwe versie toegevoegd
+2026-04-20 23:26:55.426 | INFO     | __main__:<module>:55 - Brondata is aangepast voor de vervolgtest met een nieuw feit
+2026-04-20 23:26:55.451 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 1 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.467 | INFO     | __main__:<module>:9 - DWH is leeg — laad eerst de benodigde dimensies voor deze test
+2026-04-20 23:26:55.475 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 196 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.482 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.487 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 5 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.492 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 13 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.497 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 11 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.504 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 75 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.516 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 0 gewijzigd (SCD2)
+2026-04-20 23:26:55.522 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 15 nieuw, 0 gewijzigd (SCD2)
+2026-04-20 23:26:55.536 | INFO     | __main__:load_feit:128 -   ✓ Accessoire_Verkoop: 101 nieuwe rijen
+2026-04-20 23:26:55.559 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+2026-04-20 23:26:55.560 | INFO     | __main__:<module>:92 - Opgeruimd + klant hersteld via SCD2
+2026-04-20 23:26:55.588 | INFO     | __main__:<module>:36 - SDM brondata gewijzigd
+2026-04-20 23:26:55.589 | INFO     | __main__:<module>:39 - Herlaad: volledige ETL starten...
+2026-04-20 23:26:55.598 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.606 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.620 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 0 nieuw, 1 gewijzigd
+2026-04-20 23:26:55.631 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.644 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.662 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.688 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+2026-04-20 23:26:55.702 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
+2026-04-20 23:26:55.714 | INFO     | __main__:load_feit:128 -   ✓ Accessoire_Verkoop: 0 nieuwe rijen
+2026-04-20 23:26:55.733 | INFO     | __main__:load_feit:128 -   ✓ Fiets_Verkoop: 150 nieuwe rijen
+2026-04-20 23:26:55.743 | INFO     | __main__:load_feit:128 -   ✓ Onderhoud: 50 nieuwe rijen
+2026-04-20 23:26:55.745 | INFO     | __main__:<module>:71 - ✓ SCD1 Leverancier correct overschreven
+2026-04-20 23:26:55.748 | INFO     | __main__:<module>:84 - ✓ SCD2 Klant correct — 3 afgesloten, 1 actueel
+2026-04-20 23:26:55.751 | INFO     | __main__:<module>:105 -   Fiets_Verkoop was leeg, initieel gevuld met 150 rijen
+2026-04-20 23:26:55.752 | INFO     | __main__:<module>:110 -   Onderhoud was leeg, initieel gevuld met 50 rijen
+2026-04-20 23:26:55.752 | INFO     | __main__:<module>:112 - ✓ Geen feit-duplicaten na herlaad
+2026-04-20 23:26:55.763 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.769 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.775 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.781 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.788 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.796 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 0 nieuw, 0 gewijzigd
+2026-04-20 23:26:55.822 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
+2026-04-20 23:26:55.836 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
+2026-04-20 23:26:55.837 | INFO     | __main__:<module>:131 - ✓ SDM en DWH hersteld naar origineel
+2026-04-20 23:26:55.838 | INFO     | __main__:<module>:132 - === TEST 6 GESLAAGD ===
+2026-04-21 01:55:33.222 | INFO     | __main__:<module>:2 - Verificatie gestart...
