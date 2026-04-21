@@ -1,198 +1,164 @@
-2026-04-15 10:31:44 | INFO | Imports gedaan � SDM: ../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH: BikeToDrive_6_Datawarehouse.db
-2026-04-15 10:31:44 | INFO | DWH-strategie gedetecteerd: SCD1
-2026-04-15 10:31:44 | INFO | Config: 8 SCD1, 0 SCD2, 3 feiten
-2026-04-15 10:31:44 | INFO | Generieke functies gedefinieerd
-2026-04-15 10:31:44 | INFO | ==================================================
-2026-04-15 10:31:44 | INFO | ==================================================
-2026-04-15 10:31:44 | INFO | STAP 1: Dimensies SCD Type 1
-2026-04-15 10:31:44 | INFO | STAP 2: Overgeslagen � huidige DWH gebruikt geen SCD Type 2 schema
-2026-04-15 10:31:44 | INFO | STAP 3: Feittabellen
-2026-04-15 10:31:44 | INFO | ==================================================
-2026-04-15 10:31:44 | INFO | ETL SUCCESVOL AFGEROND
-2026-04-15 10:31:44 | INFO | ==================================================
-2026-04-15 10:31:44 | INFO | START RESET DWH
-2026-04-15 10:31:44 | INFO | RESET VOLTOOID � DWH IS LEEG
-2026-04-15 10:31:44 | INFO | Verificatie gestart...
-2026-04-15 10:31:44 | INFO | Preview 'Klant' � 0 rijen
-2026-04-15 10:31:44 | INFO | Opgeruimd
-2026-04-20 23:26:54.983 | INFO     | __main__:<module>:27 - Imports gedaan — SDM: ../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH: BikeToDrive_6_Datawarehouse.db
-2026-04-20 23:26:55.004 | INFO     | __main__:<module>:114 - DWH-strategie gedetecteerd: SCD2
-2026-04-20 23:26:55.006 | INFO     | __main__:<module>:115 - Config: 6 SCD1, 2 SCD2, 3 feiten
-2026-04-20 23:26:55.036 | INFO     | __main__:<module>:131 - Generieke functies gedefinieerd
-2026-04-20 23:26:55.052 | INFO     | __main__:<module>:3 - ==================================================
-2026-04-20 23:26:55.053 | INFO     | __main__:<module>:4 - START ETL: SDM → DWH
-2026-04-20 23:26:55.054 | INFO     | __main__:<module>:5 - ==================================================
-2026-04-20 23:26:55.061 | INFO     | __main__:<module>:11 - STAP 1: Dimensies SCD Type 1
-2026-04-20 23:26:55.090 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.102 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 1 gewijzigd
-2026-04-20 23:26:55.119 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 0 nieuw, 1 gewijzigd
-2026-04-20 23:26:55.136 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.155 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.164 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.165 | INFO     | __main__:<module>:18 - STAP 2: Dimensies SCD Type 2
-2026-04-20 23:26:55.181 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-2026-04-20 23:26:55.197 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 0 nieuw, 1 gewijzigd (SCD2)
-2026-04-20 23:26:55.199 | INFO     | __main__:<module>:26 - STAP 3: Feittabellen
-2026-04-20 23:26:55.210 | INFO     | __main__:load_feit:128 -   ✓ Accessoire_Verkoop: 0 nieuwe rijen
-2026-04-20 23:26:55.220 | INFO     | __main__:load_feit:128 -   ✓ Fiets_Verkoop: 0 nieuwe rijen
-2026-04-20 23:26:55.231 | INFO     | __main__:load_feit:128 -   ✓ Onderhoud: 0 nieuwe rijen
-2026-04-20 23:26:55.232 | INFO     | __main__:<module>:44 - ==================================================
-2026-04-20 23:26:55.233 | INFO     | __main__:<module>:45 - ETL SUCCESVOL AFGEROND
-2026-04-20 23:26:55.233 | INFO     | __main__:<module>:46 - ==================================================
-2026-04-20 23:26:55.247 | INFO     | __main__:<module>:3 - START RESET DWH
-2026-04-20 23:26:55.254 | INFO     | __main__:<module>:10 -   ✓ reset: Onderhoud
-2026-04-20 23:26:55.255 | INFO     | __main__:<module>:10 -   ✓ reset: Fiets_Verkoop
-2026-04-20 23:26:55.257 | INFO     | __main__:<module>:10 -   ✓ reset: Accessoire_Verkoop
-2026-04-20 23:26:55.258 | INFO     | __main__:<module>:10 -   ✓ reset: Monteur
-2026-04-20 23:26:55.259 | INFO     | __main__:<module>:10 -   ✓ reset: Klant
-2026-04-20 23:26:55.260 | INFO     | __main__:<module>:10 -   ✓ reset: Fiets
-2026-04-20 23:26:55.261 | INFO     | __main__:<module>:10 -   ✓ reset: Fabrikant
-2026-04-20 23:26:55.262 | INFO     | __main__:<module>:10 -   ✓ reset: Accessoire
-2026-04-20 23:26:55.264 | INFO     | __main__:<module>:10 -   ✓ reset: Leverancier
-2026-04-20 23:26:55.265 | INFO     | __main__:<module>:10 -   ✓ reset: Filiaal
-2026-04-20 23:26:55.266 | INFO     | __main__:<module>:10 -   ✓ reset: Datum
-2026-04-20 23:26:55.269 | INFO     | __main__:<module>:14 - RESET VOLTOOID — DWH IS LEEG
-2026-04-20 23:26:55.282 | INFO     | __main__:<module>:2 - Verificatie gestart...
-2026-04-20 23:26:55.311 | INFO     | __main__:<module>:7 - Preview 'Klant' — 0 rijen
-2026-04-20 23:26:55.340 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 6 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.347 | INFO     | __main__:<module>:22 - Opgeruimd
-2026-04-20 23:26:55.370 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.379 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.380 | INFO     | __main__:<module>:23 - Hersteld naar origineel
-2026-04-20 23:26:55.396 | INFO     | __main__:<module>:17 - Klant 1 niet aanwezig in DWH — initialiseer eerst de klantdimensie voor deze test
-2026-04-20 23:26:55.402 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 25 nieuw, 0 gewijzigd (SCD2)
-2026-04-20 23:26:55.421 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-2026-04-20 23:26:55.425 | INFO     | __main__:<module>:46 - SCD2 gedetecteerd — oude versie afgesloten en nieuwe versie toegevoegd
-2026-04-20 23:26:55.426 | INFO     | __main__:<module>:55 - Brondata is aangepast voor de vervolgtest met een nieuw feit
-2026-04-20 23:26:55.451 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 1 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.467 | INFO     | __main__:<module>:9 - DWH is leeg — laad eerst de benodigde dimensies voor deze test
-2026-04-20 23:26:55.475 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 196 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.482 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.487 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 5 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.492 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 13 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.497 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 11 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.504 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 75 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.516 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 0 gewijzigd (SCD2)
-2026-04-20 23:26:55.522 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 15 nieuw, 0 gewijzigd (SCD2)
-2026-04-20 23:26:55.536 | INFO     | __main__:load_feit:128 -   ✓ Accessoire_Verkoop: 101 nieuwe rijen
-2026-04-20 23:26:55.559 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-2026-04-20 23:26:55.560 | INFO     | __main__:<module>:92 - Opgeruimd + klant hersteld via SCD2
-2026-04-20 23:26:55.588 | INFO     | __main__:<module>:36 - SDM brondata gewijzigd
-2026-04-20 23:26:55.589 | INFO     | __main__:<module>:39 - Herlaad: volledige ETL starten...
-2026-04-20 23:26:55.598 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.606 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.620 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 0 nieuw, 1 gewijzigd
-2026-04-20 23:26:55.631 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.644 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.662 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.688 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-2026-04-20 23:26:55.702 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
-2026-04-20 23:26:55.714 | INFO     | __main__:load_feit:128 -   ✓ Accessoire_Verkoop: 0 nieuwe rijen
-2026-04-20 23:26:55.733 | INFO     | __main__:load_feit:128 -   ✓ Fiets_Verkoop: 150 nieuwe rijen
-2026-04-20 23:26:55.743 | INFO     | __main__:load_feit:128 -   ✓ Onderhoud: 50 nieuwe rijen
-2026-04-20 23:26:55.745 | INFO     | __main__:<module>:71 - ✓ SCD1 Leverancier correct overschreven
-2026-04-20 23:26:55.748 | INFO     | __main__:<module>:84 - ✓ SCD2 Klant correct — 3 afgesloten, 1 actueel
-2026-04-20 23:26:55.751 | INFO     | __main__:<module>:105 -   Fiets_Verkoop was leeg, initieel gevuld met 150 rijen
-2026-04-20 23:26:55.752 | INFO     | __main__:<module>:110 -   Onderhoud was leeg, initieel gevuld met 50 rijen
-2026-04-20 23:26:55.752 | INFO     | __main__:<module>:112 - ✓ Geen feit-duplicaten na herlaad
-2026-04-20 23:26:55.763 | INFO     | __main__:load_scd1:75 -   ✓ Datum: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.769 | INFO     | __main__:load_scd1:75 -   ✓ Filiaal: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.775 | INFO     | __main__:load_scd1:75 -   ✓ Leverancier: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.781 | INFO     | __main__:load_scd1:75 -   ✓ Accessoire: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.788 | INFO     | __main__:load_scd1:75 -   ✓ Fabrikant: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.796 | INFO     | __main__:load_scd1:75 -   ✓ Fiets: 0 nieuw, 0 gewijzigd
-2026-04-20 23:26:55.822 | INFO     | __main__:load_scd2:97 -   ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-2026-04-20 23:26:55.836 | INFO     | __main__:load_scd2:97 -   ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
-2026-04-20 23:26:55.837 | INFO     | __main__:<module>:131 - ✓ SDM en DWH hersteld naar origineel
-2026-04-20 23:26:55.838 | INFO     | __main__:<module>:132 - === TEST 6 GESLAAGD ===
-2026-04-21 01:55:33.222 | INFO     | __main__:<module>:2 - Verificatie gestart...
-Imports gedaan — SDM: ../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH: BikeToDrive_6_Datawarehouse.db
-DWH-strategie gedetecteerd: SCD2
-Config: 6 SCD1, 2 SCD2, 3 feiten
-Generieke functies gedefinieerd
-==================================================
-START ETL: SDM → DWH
-==================================================
-STAP 1: Dimensies SCD Type 1
-  ✓ Datum: 0 nieuw, 0 gewijzigd
-  ✓ Filiaal: 0 nieuw, 0 gewijzigd
-  ✓ Leverancier: 0 nieuw, 0 gewijzigd
-  ✓ Accessoire: 0 nieuw, 0 gewijzigd
-  ✓ Fabrikant: 0 nieuw, 0 gewijzigd
-  ✓ Fiets: 0 nieuw, 0 gewijzigd
-STAP 2: Dimensies SCD Type 2
-  ✓ Klant: 0 nieuw, 0 gewijzigd (SCD2)
-  ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
-STAP 3: Feittabellen
-  ✓ Accessoire_Verkoop: 0 nieuwe rijen
-  ✓ Fiets_Verkoop: 0 nieuwe rijen
-  ✓ Onderhoud: 0 nieuwe rijen
-==================================================
-ETL SUCCESVOL AFGEROND
-==================================================
-START RESET DWH
-  ✓ reset: Onderhoud
-  ✓ reset: Fiets_Verkoop
-  ✓ reset: Accessoire_Verkoop
-  ✓ reset: Monteur
-  ✓ reset: Klant
-  ✓ reset: Fiets
-  ✓ reset: Fabrikant
-  ✓ reset: Accessoire
-  ✓ reset: Leverancier
-  ✓ reset: Filiaal
-  ✓ reset: Datum
-RESET VOLTOOID — DWH IS LEEG
-Verificatie gestart...
-Preview 'Klant' — 0 rijen
-  ✓ Filiaal: 6 nieuw, 0 gewijzigd
-Opgeruimd
-  ✓ Filiaal: 0 nieuw, 0 gewijzigd
-  ✓ Filiaal: 0 nieuw, 0 gewijzigd
-Hersteld naar origineel
-Klant 1 niet aanwezig in DWH — initialiseer eerst de klantdimensie voor deze test
-  ✓ Klant: 25 nieuw, 0 gewijzigd (SCD2)
-  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-SCD2 gedetecteerd — oude versie afgesloten en nieuwe versie toegevoegd
-Brondata is aangepast voor de vervolgtest met een nieuw feit
-  ✓ Filiaal: 1 nieuw, 0 gewijzigd
-DWH is leeg — laad eerst de benodigde dimensies voor deze test
-  ✓ Datum: 196 nieuw, 0 gewijzigd
-  ✓ Filiaal: 0 nieuw, 0 gewijzigd
-  ✓ Leverancier: 5 nieuw, 0 gewijzigd
-  ✓ Accessoire: 13 nieuw, 0 gewijzigd
-  ✓ Fabrikant: 11 nieuw, 0 gewijzigd
-  ✓ Fiets: 75 nieuw, 0 gewijzigd
-  ✓ Klant: 0 nieuw, 0 gewijzigd (SCD2)
-  ✓ Monteur: 15 nieuw, 0 gewijzigd (SCD2)
-  ✓ Accessoire_Verkoop: 101 nieuwe rijen
-  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-Opgeruimd + klant hersteld via SCD2
-SDM brondata gewijzigd
-Herlaad: volledige ETL starten...
-  ✓ Datum: 0 nieuw, 0 gewijzigd
-  ✓ Filiaal: 0 nieuw, 0 gewijzigd
-  ✓ Leverancier: 0 nieuw, 0 gewijzigd
-  ✓ Accessoire: 0 nieuw, 0 gewijzigd
-  ✓ Fabrikant: 0 nieuw, 0 gewijzigd
-  ✓ Fiets: 0 nieuw, 0 gewijzigd
-  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-  ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
-  ✓ Accessoire_Verkoop: 0 nieuwe rijen
-  ✓ Fiets_Verkoop: 150 nieuwe rijen
-  ✓ Onderhoud: 50 nieuwe rijen
-✓ SCD1 Leverancier correct overschreven
-✓ SCD2 Klant correct — 3 afgesloten, 1 actueel
-  Fiets_Verkoop was leeg, initieel gevuld met 150 rijen
-  Onderhoud was leeg, initieel gevuld met 50 rijen
-✓ Geen feit-duplicaten na herlaad
-  ✓ Datum: 0 nieuw, 0 gewijzigd
-  ✓ Filiaal: 0 nieuw, 0 gewijzigd
-  ✓ Leverancier: 0 nieuw, 0 gewijzigd
-  ✓ Accessoire: 0 nieuw, 0 gewijzigd
-  ✓ Fabrikant: 0 nieuw, 0 gewijzigd
-  ✓ Fiets: 0 nieuw, 0 gewijzigd
-  ✓ Klant: 0 nieuw, 1 gewijzigd (SCD2)
-  ✓ Monteur: 0 nieuw, 0 gewijzigd (SCD2)
-✓ SDM en DWH hersteld naar origineel
-=== TEST 6 GESLAAGD ===
+2026-04-22 00:38:57|INFO|DWH_ETL|Initialize databases: SDM=../WEEK 3/BikeToDrive_6 _SourceDataModel.db, DWH=BikeToDrive_6_Datawarehouse.db
+2026-04-22 00:39:00|INFO|DWH-strategie gedetecteerd: SCD2
+2026-04-22 00:39:00|INFO|Config: 6 SCD1, 2 SCD2, 3 feiten
+2026-04-22 00:39:03|SUCCESS|DWH_ETL|Functions ready
+2026-04-22 00:39:07|INFO|DWH_ETL|Start ETL pipeline
+2026-04-22 00:39:07|INFO|DWH_ETL|Start step: SCD1 dimensions
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD1: Datum (196 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Datum
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Datum (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD1 done: Datum (new=0, changed=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD1: Filiaal (5 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Filiaal
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Filiaal (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD1 done: Filiaal (new=0, changed=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD1: Leverancier (5 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Leverancier
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Leverancier (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: UPDATE Leverancier SET naam = ?, adres = ?, woonplaats = ? WHERE leveranciernr = ?
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD1 done: Leverancier (new=0, changed=1)
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD1: Accessoire (13 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Accessoire
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Accessoire (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD1 done: Accessoire (new=0, changed=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD1: Fabrikant (11 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Fabrikant
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Fabrikant (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD1 done: Fabrikant (new=0, changed=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD1: Fiets (75 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Fiets
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Fiets (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD1 done: Fiets (new=0, changed=0)
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|Step done: SCD1 dimensions
+2026-04-22 00:39:07|INFO|DWH_ETL|Start step: SCD2 dimensions
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD2: Klant (25 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Klant (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD2 done: Klant (new=0, changed=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|Start SCD2: Monteur (15 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT * FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Monteur (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|SCD2 done: Monteur (new=0, changed=0)
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|Step done: SCD2 dimensions
+2026-04-22 00:39:07|INFO|DWH_ETL|Start step: fact tables
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT klantnr, klant_sk FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT monteurnr, monteur_sk FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|Start fact load: Accessoire_Verkoop (100 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT accessoire_verkoopnr FROM Accessoire_Verkoop
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Accessoire_Verkoop (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|Fact done: Accessoire_Verkoop (new=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT klantnr, klant_sk FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT monteurnr, monteur_sk FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|Start fact load: Fiets_Verkoop (150 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT fiets_verkoopnr FROM Fiets_Verkoop
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Fiets_Verkoop (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|Fact done: Fiets_Verkoop (new=0)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT monteurnr, monteur_sk FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:07|INFO|DWH_ETL|Start fact load: Onderhoud (50 rows)
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: SELECT onderhoudnr FROM Onderhoud
+2026-04-22 00:39:07|INFO|DWH_ETL|SQL: INSERT INTO Onderhoud (...) VALUES (...) [0 rows]
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|Fact done: Onderhoud (new=0)
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|Step done: fact tables
+2026-04-22 00:39:07|SUCCESS|DWH_ETL|ETL pipeline done
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: UPDATE Accessoire_Verkoop_Leverancier SET naam = 'TEST_HERLAAD' WHERE leveranciernr = 1
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: UPDATE Accessoire_Inkoop_Leverancier SET naam = 'TEST_HERLAAD' WHERE leveranciernr = 1
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: UPDATE Accessoire_Verkoop_Klant SET woonplaats = 'HERLAAD_STAD' WHERE klantnr = 1
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: UPDATE Fiets_Verkoop_Klant SET woonplaats = 'HERLAAD_STAD' WHERE klantnr = 1
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|Source update done
+2026-04-22 00:39:19|INFO|DWH_ETL|Start reload
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD1: Datum (196 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Datum
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Datum (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD1 done: Datum (new=0, changed=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD1: Filiaal (5 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Filiaal
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Filiaal (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD1 done: Filiaal (new=0, changed=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD1: Leverancier (5 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Leverancier
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Leverancier (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: UPDATE Leverancier SET naam = ?, adres = ?, woonplaats = ? WHERE leveranciernr = ?
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD1 done: Leverancier (new=0, changed=1)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD1: Accessoire (13 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Accessoire
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Accessoire (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD1 done: Accessoire (new=0, changed=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD1: Fabrikant (11 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Fabrikant
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Fabrikant (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD1 done: Fabrikant (new=0, changed=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD1: Fiets (75 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Fiets
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Fiets (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD1 done: Fiets (new=0, changed=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD2: Klant (25 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Klant (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: UPDATE Klant SET eindtijd = ? WHERE klant_sk = ?
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Klant (...) VALUES (...) [1 row]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD2 done: Klant (new=0, changed=1)
+2026-04-22 00:39:19|INFO|DWH_ETL|Start SCD2: Monteur (15 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT * FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Monteur (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|SCD2 done: Monteur (new=0, changed=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT klantnr, klant_sk FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT monteurnr, monteur_sk FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|Start fact load: Accessoire_Verkoop (100 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT accessoire_verkoopnr FROM Accessoire_Verkoop
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Accessoire_Verkoop (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|Fact done: Accessoire_Verkoop (new=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT klantnr, klant_sk FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT monteurnr, monteur_sk FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|Start fact load: Fiets_Verkoop (150 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT fiets_verkoopnr FROM Fiets_Verkoop
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Fiets_Verkoop (...) VALUES (...) [0 rows]
+2026-04-22 00:39:19|SUCCESS|DWH_ETL|Fact done: Fiets_Verkoop (new=0)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT monteurnr, monteur_sk FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:19|INFO|DWH_ETL|Start fact load: Onderhoud (50 rows)
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: SELECT onderhoudnr FROM Onderhoud
+2026-04-22 00:39:19|INFO|DWH_ETL|SQL: INSERT INTO Onderhoud (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Fact done: Onderhoud (new=0)
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Reload done
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Check done: leverancier SCD1
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Check done: klant SCD2 (7 old)
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Check done: no duplicates
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: UPDATE Accessoire_Verkoop_Leverancier SET naam = ? WHERE leveranciernr = 1
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: UPDATE Accessoire_Inkoop_Leverancier SET naam = ? WHERE leveranciernr = 1
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: UPDATE Accessoire_Verkoop_Klant SET woonplaats = ? WHERE klantnr = 1
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: UPDATE Fiets_Verkoop_Klant SET woonplaats = ? WHERE klantnr = 1
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD1: Datum (196 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Datum
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Datum (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD1 done: Datum (new=0, changed=0)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD1: Filiaal (5 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Filiaal
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Filiaal (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD1 done: Filiaal (new=0, changed=0)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD1: Leverancier (5 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Leverancier
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Leverancier (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD1 done: Leverancier (new=0, changed=0)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD1: Accessoire (13 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Accessoire
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Accessoire (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD1 done: Accessoire (new=0, changed=0)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD1: Fabrikant (11 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Fabrikant
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Fabrikant (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD1 done: Fabrikant (new=0, changed=0)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD1: Fiets (75 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Fiets
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Fiets (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD1 done: Fiets (new=0, changed=0)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD2: Klant (25 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Klant WHERE eindtijd IS NULL
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Klant (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: UPDATE Klant SET eindtijd = ? WHERE klant_sk = ?
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Klant (...) VALUES (...) [1 row]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD2 done: Klant (new=0, changed=1)
+2026-04-22 00:39:20|INFO|DWH_ETL|Start SCD2: Monteur (15 rows)
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: SELECT * FROM Monteur WHERE eindtijd IS NULL
+2026-04-22 00:39:20|INFO|DWH_ETL|SQL: INSERT INTO Monteur (...) VALUES (...) [0 rows]
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|SCD2 done: Monteur (new=0, changed=0)
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Restore done
+2026-04-22 00:39:20|SUCCESS|DWH_ETL|Test 6 passed
