@@ -6,6 +6,8 @@ import time
 from dataclasses import dataclass
 from pathlib import Path
 
+SCRIPT_DIR = Path(__file__).parent
+
 
 WIDTH = 640
 HEIGHT = 480
@@ -340,8 +342,8 @@ def parse_args():
         default="human",
         help="human records training data, ai uses a trained model, heuristic is a simple rule-based demo",
     )
-    parser.add_argument("--record", default="data/training_data.csv", help="CSV file for human training data")
-    parser.add_argument("--model", default="models/best_model.joblib", help="Trained model for AI mode")
+    parser.add_argument("--record", default=str(SCRIPT_DIR / "data" / "training_data.csv"), help="CSV file for human training data")
+    parser.add_argument("--model", default=str(SCRIPT_DIR / "models" / "best_model.joblib"), help="Trained model for AI mode")
     return parser.parse_args()
 
 
