@@ -101,6 +101,22 @@ def load_dataset(path):
     return df
 
 
+def balance_training_classes(X_train, y_train):
+    """Oversample minority action classes so every class has the same count as the majority.
+    This prevents the model from learning to always predict 'stay still' (action=0)."""
+    from sklearn.utils import resample
+    combined = X_train.copy()
+    combined["__label__"] = y_train.values
+    max_count = combined["__label__"].value_counts().max()
+    parts = []
+    for _, group in combined.groupby("__label__"):
+        if len(group) < max_count:
+            group = resample(group, replace=True, n_samples=max_count, random_state=42)
+        parts.append(group)
+    balanced = pd.concat(parts).sample(frac=1, random_state=42).reset_index(drop=True)
+    return balanced.drop("__label__", axis=1), balanced["__label__"]
+
+
 def build_model(config):
     return Pipeline(
         steps=[
@@ -143,6 +159,9 @@ def train_experiments(df):
             random_state=42,
             stratify=stratify,
         )
+
+        # Balance classes so "stay still" doesn't dominate the training signal
+        X_train, y_train = balance_training_classes(X_train, y_train)
 
         for config in EXPERIMENTS:
             experiment_id += 1

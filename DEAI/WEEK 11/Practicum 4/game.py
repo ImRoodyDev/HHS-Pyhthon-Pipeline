@@ -231,8 +231,17 @@ def load_ai(path):
 def ai_action(model, feature_columns, features):
     # Build the input row in the correct column order and let the model predict an action
     values = [[features[column] for column in feature_columns]]
-    prediction = model.predict(values)[0]
-    return int(prediction)
+    try:
+        # Use class probabilities and penalise "stay still" so the AI moves more aggressively.
+        # Training data is usually dominated by action=0, which causes the model to freeze;
+        # reducing its probability weight forces the AI to dodge sooner.
+        proba = model.predict_proba(values)[0].copy()
+        classes = list(model.classes_)
+        if 0 in classes:
+            proba[classes.index(0)] *= 0.40  # strongly discourage staying still
+        return int(classes[int(proba.argmax())])
+    except Exception:
+        return int(model.predict(values)[0])
 
 
 # --- Stone spawning ---
