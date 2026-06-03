@@ -9,6 +9,7 @@ Dit project bouwt een eenvoudige 2D-game waarin een speler vallende stenen ontwi
 - `requirements.txt`: benodigde packages.
 - `DESIGN_DOCUMENT_TEMPLATE.md`: invulbaar design document. Vul dit zelf aan, omdat de opdracht aangeeft dat het design zonder AI moet worden bedacht.
 - `HC_CONTEXT.md`: koppeling tussen de game en begrippen uit HC-1 en HC-2.
+- `GAME_CODE_EXPLANATION.md`: aparte, transparante uitleg van `game.py`, `train_model.py`, dataflow en hyperparameters.
 - `data/`: hier komt `training_data.csv`.
 - `models/`: hier komt `best_model.joblib`.
 - `logs/`: hier komen experimenttabellen en grafieken.

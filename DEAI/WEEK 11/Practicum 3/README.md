@@ -7,6 +7,7 @@ Deze map bevat de uitwerking voor week 11, practicum 3.
 - `Practicum_3_Neural_Networks_AmesHousing.ipynb`: notebook met alle code voor data laden, feature-sets, linear regression baseline, neural-network experimenten, visualisaties en Excel-export.
 - `AmesHousing.xlsx`: lokale kopie van de dataset.
 - `experiment_log.xlsx`: Excel-logboektemplate. Na het draaien van de notebook wordt dit bestand gevuld met de resultaten.
+- `CODE_EXPLANATION.md`: uitgebreide uitleg van de notebook, HC-termen en alle gebruikte hyperparameters.
 
 ## Hoe de code is opgebouwd
 

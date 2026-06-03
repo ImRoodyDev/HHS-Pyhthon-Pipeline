@@ -232,13 +232,32 @@ def ai_action(model, feature_columns, features):
     # Build the input row in the correct column order and let the model predict an action
     values = [[features[column] for column in feature_columns]]
     try:
-        # Use class probabilities and penalise "stay still" so the AI moves more aggressively.
-        # Training data is usually dominated by action=0, which causes the model to freeze;
-        # reducing its probability weight forces the AI to dodge sooner.
         proba = model.predict_proba(values)[0].copy()
         classes = list(model.classes_)
-        if 0 in classes:
-            proba[classes.index(0)] *= 0.40  # strongly discourage staying still
+
+        danger_l = features.get("danger_left",   0)
+        danger_c = features.get("danger_center", 0)
+        danger_r = features.get("danger_right",  0)
+        any_danger = max(danger_l, danger_c, danger_r) > 0.5
+        player_x_norm = features.get("player_x_norm", 0.5)
+
+        # Only penalise "stay" when there is an active threat — not blindly every frame.
+        # Blind penalisation caused the AI to always move and hug walls.
+        if any_danger and 0 in classes:
+            proba[classes.index(0)] *= 0.25
+
+        # Suppress moving into known danger
+        if danger_r > 0.5 and 1 in classes:
+            proba[classes.index(1)] *= 0.05
+        if danger_l > 0.5 and -1 in classes:
+            proba[classes.index(-1)] *= 0.05
+
+        # Suppress moving further toward a wall when already very close to it
+        if player_x_norm > 0.85 and 1 in classes:
+            proba[classes.index(1)] *= 0.10
+        if player_x_norm < 0.15 and -1 in classes:
+            proba[classes.index(-1)] *= 0.10
+
         return int(classes[int(proba.argmax())])
     except Exception:
         return int(model.predict(values)[0])
